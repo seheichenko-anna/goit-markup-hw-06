@@ -367,7 +367,7 @@ img {
 }
 
 .list-works-item {
-    flex-basis: calc((100% - 3 * 16px) / 3);
+    width: calc((100% - 3 * 16px) / 3);
 }
 
 /*============================================= SECTION OUR TEAM =======================================*/
@@ -1005,13 +1005,14 @@ img {
 @media screen and (min-width: 428px) and (max-width:1157px) {
 
     .section-customers .container,
-    .section-our-team .container {
+    .section-our-team .container,
+    .section-advantages .container {
         max-width: 582px;
     }
 
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 428px) and (max-width: 768px) {
 
     .container {
         max-width: 768px;
@@ -1083,7 +1084,7 @@ img {
     }
 
     .list-advantages-item {
-        flex-basis: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 
     .list-item-title {
@@ -1098,7 +1099,7 @@ img {
     }
 
     .list-item-our-team {
-        flex-basis: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 
     /*=============================== SECTION CUSTOMERS =====================*/
@@ -1153,7 +1154,7 @@ img {
     }
 
     .portfolio-list-item {
-        flex-basis: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 
     .portfolio-list {
@@ -1197,7 +1198,7 @@ img {
     }
 
     .list-advantages-item {
-        flex-basis: calc((100% - 72px) / 4);
+        width: calc((100% - 72px) / 4);
     }
 
     .list-item-title {
@@ -1220,7 +1221,7 @@ img {
     }
 
     .list-item-our-team {
-        flex-basis: calc((100% - 72px) / 4);
+        width: calc((100% - 72px) / 4);
     }
 
     /*=============================== SECTION CUSTOMERS =====================*/
@@ -1268,7 +1269,7 @@ img {
     }
 
     .portfolio-list-item {
-        flex-basis: calc((100% - 48px) / 3);
+        width: calc((100% - 48px) / 3);
         border: none;
         box-shadow: none;
     }
