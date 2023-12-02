@@ -189,6 +189,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+    max-width: 100%;
 }
 
 
@@ -402,6 +403,7 @@ img {
 
 .list-item-text {
     color: var(--second-color);
+    font-weight: 500;
 }
 
 .list-item-title-our-team {
@@ -500,10 +502,18 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 72px;
 }
 
+.footer-left-block {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+
 .footer-info {
-    margin-bottom: 72px;
+
     text-align: center;
 }
 
@@ -531,9 +541,6 @@ img {
     text-align: center;
 }
 
-.footer-social-links {
-    margin-bottom: 72px;
-}
 
 .footer .list-social-media-wrapper {
     gap: 16px;
@@ -1002,7 +1009,7 @@ img {
 }
 
 
-@media screen and (min-width: 428px) and (max-width:1157px) {
+@media screen and (min-width: 768px) and (max-width:1157px) {
 
     .section-customers .container,
     .section-our-team .container,
@@ -1012,19 +1019,11 @@ img {
 
 }
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
-
-    .container {
-        max-width: 768px;
-    }
-
-
-}
 
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 1158px;
+        max-width: 768px;
     }
 
     /*========================= HEADER ========================*/
@@ -1036,8 +1035,11 @@ img {
     .menu {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 122px;
+        flex-grow: 1;
+    }
+
+    .address {
+        margin-left: auto;
     }
 
     .header-nav-list-item .link.current::after {
@@ -1063,9 +1065,6 @@ img {
 
     /*============================== HERO ========================*/
 
-    .hero {
-        padding: 188px 0;
-    }
 
     .hero-title {
         font-size: 56px;
@@ -1116,7 +1115,7 @@ img {
     /*================================== FOOTER =============================*/
 
     .footer-left-block {
-        display: flex;
+        flex-direction: row;
         align-items: baseline;
         gap: 24px;
     }
@@ -1165,6 +1164,10 @@ img {
 
 @media screen and (min-width: 1158px) {
 
+    .container {
+        max-width: 1158px;
+    }
+
     /*========================= HEADER ========================*/
 
     .header-contacts-list {
@@ -1183,6 +1186,10 @@ img {
 
     /*============================== HERO ========================*/
 
+    .hero {
+        padding: 188px 0;
+    }
+
     .hero-container {
         gap: 48px;
     }
@@ -1195,6 +1202,10 @@ img {
 
     .list-item-icon-wrapper {
         display: flex;
+    }
+
+    .list-item-text {
+        font-weight: 400;
     }
 
     .list-advantages-item {
@@ -1227,7 +1238,7 @@ img {
     /*=============================== SECTION CUSTOMERS =====================*/
 
     .section-customers {
-        padding: 120px;
+        padding: 120px 0;
     }
 
     .list-customers-item {
@@ -1239,18 +1250,16 @@ img {
     .footer .container {
         flex-direction: row;
         align-items: baseline;
+        gap: 80px;
+    }
+
+
+    .footer-left-block {
+        gap: 120px;
+
     }
 
     .footer-info {
-        margin-right: 120px;
-    }
-
-    .footer-left-block {
-        margin-right: 80px;
-    }
-
-    .footer-info,
-    .footer-social-links {
         margin-bottom: 0;
     }
 
